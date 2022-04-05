@@ -10,7 +10,6 @@ import Articulo3 from './Components/Secion3';
 import Articulo4 from './Components/Secion4';
 import Articulo5 from './Components/Secion5';
 import './App.css';
-import { Fragment } from 'react/cjs/react.development';
 import Imagen1 from "./Img/imagen1.jpg";
 import Imagen2 from "./Img/imagen2.jpg";
 import Imagen3 from "./Img/imagen3.jpg";
@@ -271,7 +270,7 @@ function App() {
    <Container>
     
      
-     <Fragment>
+     
      <Controler onClick={OcultarArticulo}>
      <Item data-secion="1" onClick={(e)=>{CambiarInformacion(e);Colorear1();SetNumero(1)}} active={item1}/>
      <Item data-secion="2" onClick={(e)=>{CambiarInformacion(e);Colorear2();SetNumero(2)}} active={item2}/>
@@ -339,7 +338,7 @@ function App() {
       <Articulo4 alto={alto.secion4} SetAlto={SetAlto}/>
       <Articulo5 alto={alto.secion5} SetAlto={SetAlto}/>
       </Secion>
-      </Fragment>
+    
         
 
    

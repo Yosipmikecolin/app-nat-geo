@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Fragment } from "react/cjs/react.development";
 import styled from "styled-components";
 import Back from "../Img/back.png";
 import Mapa from "../Img/mapa.png";
@@ -81,11 +80,11 @@ function Secion1({alto,SetAlto}){
             {datos.map((item)=>{
 
                 return (
-                <Fragment key={item._id}>
+                <div key={item._id}>
                 <h1>{item.titulo}</h1>
                 <p>{item.descripcion}</p>
                 <br></br>
-                </Fragment>
+                </div>
                 
                 )
 
