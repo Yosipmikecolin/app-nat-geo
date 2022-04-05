@@ -11,7 +11,7 @@ function Secion4({alto,SetAlto}){
     const estados = [{id:1,estado:"EX"},{id:2,estado:"EW"},{id:3,estado:"CR"},{id:4,estado:"EN"},{id:5,estado:"VU"},{id:6,estado:"NT"},{id:7,estado:"LC"}]
 
     async function GetData(){
-    await fetch("https://api-natgeo.vercel.app/especies/articulo4")
+    await fetch("https://api-nat-7zfo3ro34-yosipmikecolin.vercel.app/especies/articulo4")
     .then(res1 => res1.json())
     .then(res2 => SetDatos(res2))
     .catch(e => console.log(e))
@@ -19,7 +19,7 @@ function Secion4({alto,SetAlto}){
     }
 
     async function GetEspecies(){
-        await fetch("https://api-natgeo.vercel.app/especies")
+        await fetch("https://api-nat-7zfo3ro34-yosipmikecolin.vercel.app/especies")
         .then(res1 => res1.json())
         .then(res2 => SetEspecies(res2[3]))
         .catch(e => console.log(e))

@@ -13,7 +13,7 @@ function Secion1({alto,SetAlto}){
 
 
     async function GetData(){
-    await fetch("https://api-natgeo.vercel.app/especies/articulo1")
+    await fetch("https://api-nat-7zfo3ro34-yosipmikecolin.vercel.app/especies/articulo1")
     .then(res1 => res1.json())
     .then(res2 => SetDatos(res2))
     .catch(e => console.log(e))
@@ -23,7 +23,7 @@ function Secion1({alto,SetAlto}){
 
 
     async function GetEspecies(){
-        await fetch("https://api-natgeo.vercel.app/especies")
+        await fetch("https://api-nat-7zfo3ro34-yosipmikecolin.vercel.app/especies")
         .then(res1 => res1.json())
         .then(res2 => SetEspecies(res2[0]))
         .catch(e => console.log(e))
